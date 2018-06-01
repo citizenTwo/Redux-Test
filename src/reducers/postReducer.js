@@ -17,6 +17,14 @@ export default function(state = initialState, action) {
             }
             break;
 
+        case NEW_POSTS:
+        return{
+            ...state,
+            item: action.payload
+        }
+        break;
+
+
         default : 
         return state;
     }
